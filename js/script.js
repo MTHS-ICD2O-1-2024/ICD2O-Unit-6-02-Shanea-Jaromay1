@@ -8,12 +8,12 @@
 "use-strict"
 
 /**
-* This function calculate, doing multiplication
+* This function calculate, click cookie
 */
 // eslint-disable-next-line no-unused-vars
 function cookieClicker () {
  //input
-  let cookieCount = localStorage.getItem('cookieClickCount')
+  let cookieCount = localStorage.getItem('cookieCount')
 
  //process
   if (cookieCount != null) {
@@ -22,7 +22,7 @@ function cookieClicker () {
     cookieCount = 1
   }
 
-localStorage.setItem('cookieClickCount', cookieClickCount)
+localStorage.setItem('cookieCount', cookieCount)
 
  // output
   document.getElementById('answer').innerHTML = 'Cookies: ' + cookieCount
